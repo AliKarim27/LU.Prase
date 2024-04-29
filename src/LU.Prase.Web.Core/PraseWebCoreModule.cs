@@ -13,6 +13,13 @@ using LU.Prase.Authentication.JwtBearer;
 using LU.Prase.Configuration;
 using LU.Prase.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.ApplicationParts;
+using Abp.MailKit;
+using Abp.Configuration.Startup;
+using LU.Prase.Models;
+using LU.Prase.Models.EmailConfiguration;
+using Abp.Hangfire.Configuration;
+using Hangfire;
+using Abp.Hangfire;
 
 namespace LU.Prase
 {
@@ -20,7 +27,9 @@ namespace LU.Prase
          typeof(PraseApplicationModule),
          typeof(PraseEntityFrameworkModule),
          typeof(AbpAspNetCoreModule)
-        ,typeof(AbpAspNetCoreSignalRModule)
+        ,typeof(AbpAspNetCoreSignalRModule),
+        typeof(AbpMailKitModule),
+        typeof(AbpHangfireModule)
      )]
     public class PraseWebCoreModule : AbpModule
     {
@@ -41,7 +50,12 @@ namespace LU.Prase
 
             // Use database for language management
             Configuration.Modules.Zero().LanguageManagement.EnableDbLocalization();
-
+            Configuration.Settings.Providers.Add<EmailSendingConfiguration>();
+            Configuration.ReplaceService<IMailKitSmtpBuilder, MyMailKitSmtpBuilder>();
+            Configuration.BackgroundJobs.UseHangfire(configuration =>
+            {
+                configuration.GlobalConfiguration.UseSqlServerStorage(_appConfiguration.GetConnectionString("Default"));
+            });
             Configuration.Modules.AbpAspNetCore()
                  .CreateControllersForAppServices(
                      typeof(PraseApplicationModule).GetAssembly()
