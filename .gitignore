@@ -255,3 +255,4 @@ src/LU.Prase.Web.Mvc/secrets.json
 src/LU.Prase.Web.MVC/App_Data
 src/LU.Prase.Web.Host/secrets.json
 src/LU.Prase.Migrator/secrets.json
+/src/LU.Prase.Web.Mvc/App_Data/Logs/Logs.txt
