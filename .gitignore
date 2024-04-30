@@ -252,5 +252,6 @@ paket-files/
 *.sln.iml
 
 src/LU.Prase.Web.Mvc/secrets.json
+src/LU.Prase.Web.MVC/App_Data
 src/LU.Prase.Web.Host/secrets.json
 src/LU.Prase.Migrator/secrets.json
