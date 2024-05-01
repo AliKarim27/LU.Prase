@@ -12,6 +12,7 @@ namespace LU.Prase.Authorization
             context.CreatePermission(PermissionNames.Pages_Users_Activation, L("UsersActivation"));
             context.CreatePermission(PermissionNames.Pages_Roles, L("Roles"));
             context.CreatePermission(PermissionNames.Pages_Tenants, L("Tenants"), multiTenancySides: MultiTenancySides.Host);
+            context.CreatePermission(PermissionNames.Pages_Email, L("Email"), multiTenancySides: MultiTenancySides.Host);
         }
 
         private static ILocalizableString L(string name)

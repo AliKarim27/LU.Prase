@@ -4,7 +4,7 @@
   "libraries": [
     //core libs start
     {
-      "library": "jquery@3.4.1",
+      "library": "jquery@3.7.1",
       "destination": "wwwroot/libs/jquery",
       "files": [
         "jquery.js",
@@ -16,7 +16,7 @@
 
     //abp libs start
     {
-      "library": "abp-web-resources@4.1.0",
+      "library": "abp-web-resources@5.9.1",
       "provider": "jsdelivr",
       "destination": "wwwroot/libs/abp-web-resources"
     },
@@ -77,10 +77,11 @@
       ]
     },
     {
-      "library": "bootstrap@4.6.0",
+      "library": "bootstrap@5.3.3",
       "provider": "jsdelivr",
       "destination": "wwwroot/libs/bootstrap",
       "files": [
+        "dist/css/bootstrap.css",
         "dist/js/bootstrap.bundle.js",
         "dist/js/bootstrap.bundle.min.js",
         "dist/js/bootstrap.bundle.js.map",
@@ -185,6 +186,6 @@
       "library": "push.js@1.0.12",
       "destination": "wwwroot/libs/push.js"
     }
-    //other libs end
+   
   ]
 }
