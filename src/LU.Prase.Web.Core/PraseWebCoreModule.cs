@@ -50,6 +50,7 @@ namespace LU.Prase
 
             // Use database for language management
             Configuration.Modules.Zero().LanguageManagement.EnableDbLocalization();
+            Configuration.MultiTenancy.IsEnabled = false;
             Configuration.Settings.Providers.Add<EmailSendingConfiguration>();
             Configuration.ReplaceService<IMailKitSmtpBuilder, MyMailKitSmtpBuilder>();
             Configuration.BackgroundJobs.UseHangfire(configuration =>

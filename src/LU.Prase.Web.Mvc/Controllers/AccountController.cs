@@ -146,11 +146,6 @@ namespace LU.Prase.Web.Controllers
 
         private bool IsSelfRegistrationEnabled()
         {
-            if (!AbpSession.TenantId.HasValue)
-            {
-                return false; // No registration enabled for host users!
-            }
-
             return true;
         }
 
