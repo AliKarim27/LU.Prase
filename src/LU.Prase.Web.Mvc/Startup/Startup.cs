@@ -17,6 +17,7 @@ using LU.Prase.Web.Resources;
 using Abp.AspNetCore.SignalR.Hubs;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.WebEncoders;
+using Hangfire;
 
 namespace LU.Prase.Web.Startup
 {
@@ -66,6 +67,11 @@ namespace LU.Prase.Web.Startup
                         )
                 )
             );
+
+            services.AddHangfire(config =>
+            {
+                config.UseSqlServerStorage(_appConfiguration.GetConnectionString("Default"));
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
@@ -89,6 +95,7 @@ namespace LU.Prase.Web.Startup
 
             app.UseJwtTokenMiddleware();
 
+     
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -97,6 +104,11 @@ namespace LU.Prase.Web.Startup
                 endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapControllerRoute("defaultWithArea", "{area}/{controller=Home}/{action=Index}/{id?}");
             });
+            if(env.IsDevelopment())
+            {
+                app.UseHangfireDashboard();
+
+            }
         }
     }
 }

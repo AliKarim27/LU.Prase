@@ -9,5 +9,6 @@ namespace LU.Prase.Managers.EmailSendingManagers
 {
     public interface IEmailSendingManager : IDomainService
     {
+        void SendEmail(string recipient, string message, string subject);
     }
 }

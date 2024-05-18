@@ -31,6 +31,7 @@
     <ProjectReference Include="..\LU.Prase.Web.Core\LU.Prase.Web.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Abp.HangFire.AspNetCore" Version="9.2.2" />
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
       <PrivateAssets>all</PrivateAssets>

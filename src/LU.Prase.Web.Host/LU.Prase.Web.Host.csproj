@@ -33,6 +33,8 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Abp.Castle.Log4Net" Version="9.1.0" />
+    <PackageReference Include="Abp.HangFire" Version="9.2.2" />
+    <PackageReference Include="Abp.HangFire.AspNetCore" Version="9.2.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
