@@ -1,0 +1,38 @@
+﻿@using LU.Prase.Web.Models.Email
+@using LU.Prase.Web.Startup
+@{
+	ViewBag.Title = L("Email");
+	ViewBag.CurrentPageName = PageNames.Email;
+}
+@model EmailViewModel
+<div class="container ">
+	<div class="card mt-3">
+		<div class="card-header">
+			<h3> Send Email</h3>
+		</div>
+		<div class="card-body">
+			<form id="create-email" action="">
+				<div class="form-floating col-6 mb-3">
+					<input asp-for="@Model.CreateEmailDto.Recipients" type="text" value="" class="form-control"/>
+					<label asp-for="@Model.CreateEmailDto.Recipients"></label>
+				</div>
+				<div class="form-floating col-6 mb-3">
+					<input asp-for="@Model.CreateEmailDto.Subject" type="text" value="" class="form-control" />
+					<label asp-for="@Model.CreateEmailDto.Subject"></label>
+				</div>
+				<div class="form-floating col-6 mb-3">
+					<textarea asp-for="@Model.CreateEmailDto.Body" class="form-control"></textarea>
+					<label asp-for="@Model.CreateEmailDto.Body"></label>
+				</div>
+
+				<div class="row justify-content-end">
+					<div class="col-2">
+						<button class="btn btn-primary" type="button">Send Email</button>
+					</div>
+
+				</div>
+			</form>
+		</div>
+
+	</div>
+</div>
