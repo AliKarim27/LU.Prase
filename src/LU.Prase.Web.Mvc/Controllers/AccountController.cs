@@ -371,7 +371,7 @@ namespace LU.Prase.Web.Controllers
 
         public string GetAppHomeUrl()
         {
-            return Url.Action("Index", "About");
+            return Url.Action("Index", "Home");
         }
 
         #endregion
