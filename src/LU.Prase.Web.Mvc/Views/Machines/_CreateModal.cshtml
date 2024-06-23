@@ -1,0 +1,35 @@
+﻿@using LU.Prase.Entities.Enums
+@using LU.Prase.Web.Models.Common.Modals
+@model LU.Prase.Web.Models.Roles.RoleListViewModel
+@{
+    Layout = null;
+}
+<div class="modal fade" id="MachineCreateModal" tabindex="-1" role="dialog" aria-labelledby="MachineCreateModalLabel" data-backdrop="static">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            @await Html.PartialAsync("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("CreateNewMachine")))
+            <form name="machineCreateForm" role="form" class="form-horizontal">
+                <div class="modal-body">
+                    <div class="form-group row required">
+                        <label class="col-md-3 col-form-label" for="machineName">@L("MachineName")</label>
+                        <div class="col-md-9">
+                            <input id="machineName" type="text" name="Name" class="form-control" required maxlength="32" minlength="2">
+                        </div>
+                    </div>
+                    <div class="form-group row required">
+                        <label class="col-md-3 col-form-label" for="machineNote">@L("MachineNote")</label>
+                        <div class="col-md-9">
+                            <input id="machineNote" type="text" name="Notes" class="form-control" required maxlength="32" minlength="2">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label" for="machineStates">@L("MachineName")</label>
+                        <select asp-items="@Html.GetEnumSelectList(typeof(MachineStates))" id="machineStates" name="MachineStates" class="form-control selectpicker w-100" data-size="5" data-live-search="true" data-style="btn-default">
+                        </select>
+                    </div>
+                </div>
+                @await Html.PartialAsync("~/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+            </form>
+        </div>
+    </div>
+</div>

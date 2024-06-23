@@ -1,0 +1,609 @@
+DEBUG 2024-06-22 18:12:22,071 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2024-06-22 18:12:23,243 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2024-06-22 18:12:23,255 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LU.Prase.Web.Host.Startup.PraseWebHostModule, LU.Prase.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-06-22 18:12:23,256 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LU.Prase.PraseWebCoreModule, LU.Prase.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-06-22 18:12:23,256 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LU.Prase.PraseApplicationModule, LU.Prase.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-06-22 18:12:23,258 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LU.Prase.PraseCoreModule, LU.Prase.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-06-22 18:12:23,259 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=9.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-06-22 18:12:23,259 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=9.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-06-22 18:12:23,259 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=9.2.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-06-22 18:12:23,260 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=9.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-06-22 18:12:23,279 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LU.Prase.EntityFrameworkCore.PraseEntityFrameworkModule, LU.Prase.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-06-22 18:12:23,280 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=9.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-06-22 18:12:23,280 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=9.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-06-22 18:12:23,280 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=9.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-06-22 18:12:23,280 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=9.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-06-22 18:12:23,281 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=9.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-06-22 18:12:23,281 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=9.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-06-22 18:12:23,281 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.MailKit.AbpMailKitModule, Abp.MailKit, Version=9.2.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-06-22 18:12:23,281 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=9.2.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-06-22 18:12:23,282 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2024-06-22 18:12:25,379 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-06-22 18:12:25,379 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-06-22 18:12:25,379 [1    ] o.Configuration.LanguageManagementConfig - Converted Prase (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2024-06-22 18:12:25,379 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+INFO  2024-06-22 18:12:27,463 [1    ] fire.SqlServer.SqlServerObjectsInstaller - Start installing Hangfire SQL objects...
+INFO  2024-06-22 18:12:30,477 [1    ] fire.SqlServer.SqlServerObjectsInstaller - Hangfire SQL objects installed.
+DEBUG 2024-06-22 18:12:31,600 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: LU.Prase.EntityFrameworkCore.PraseDbContext, LU.Prase.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2024-06-22 18:12:31,723 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2024-06-22 18:12:31,757 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2024-06-22 18:12:31,781 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2024-06-22 18:12:31,785 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Prase
+DEBUG 2024-06-22 18:12:31,788 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2024-06-22 18:12:31,792 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2024-06-22 18:12:31,852 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server using job storage: 'SQL Server: localhost@PraseDb'
+INFO  2024-06-22 18:12:31,852 [1    ] Hangfire.BackgroundJobServer             - Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+INFO  2024-06-22 18:12:31,852 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+DEBUG 2024-06-22 18:12:31,875 [ss #1] Hangfire.Processing.BackgroundExecution  - Execution loop BackgroundServerProcess:48accf9f has started in 7.7885 ms
+DEBUG 2024-06-22 18:12:31,877 [ss #1] Hangfire.Server.BackgroundServerProcess  - Server aly-pc:46000:d894d453 is announcing itself...
+DEBUG 2024-06-22 18:12:31,884 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[LU.Prase.MultiTenancy.Tenant, LU.Prase.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[LU.Prase.Authorization.Users.User, LU.Prase.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2024-06-22 18:12:31,935 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 7 classes define auto mapping attributes
+DEBUG 2024-06-22 18:12:31,935 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LU.Prase.Users.Dto.CreateUserDto
+DEBUG 2024-06-22 18:12:31,938 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LU.Prase.Users.Dto.UserDto
+DEBUG 2024-06-22 18:12:31,939 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LU.Prase.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2024-06-22 18:12:31,939 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LU.Prase.Sessions.Dto.UserLoginInfoDto
+DEBUG 2024-06-22 18:12:31,939 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LU.Prase.Roles.Dto.PermissionDto
+DEBUG 2024-06-22 18:12:31,939 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LU.Prase.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2024-06-22 18:12:31,939 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LU.Prase.MultiTenancy.Dto.TenantDto
+INFO  2024-06-22 18:12:32,065 [ss #1] Hangfire.Server.BackgroundServerProcess  - Server aly-pc:46000:d894d453 successfully announced in 187.667 ms
+INFO  2024-06-22 18:12:32,070 [ss #1] Hangfire.Server.BackgroundServerProcess  - Server aly-pc:46000:d894d453 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+DEBUG 2024-06-22 18:12:32,073 [ss #1] Hangfire.Processing.BackgroundExecution  - Execution loop ServerHeartbeatProcess:e4ac2a76 has started in 6.0654 ms
+DEBUG 2024-06-22 18:12:32,078 [og #1] Hangfire.Processing.BackgroundExecution  - Execution loop ServerWatchdog:22283023 has started in 8.1684 ms
+DEBUG 2024-06-22 18:12:32,082 [er #1] Hangfire.Processing.BackgroundExecution  - Execution loop ServerJobCancellationWatcher:79b73ff1 has started in 7.7836 ms
+DEBUG 2024-06-22 18:12:32,083 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:12:32,083 [ss #1] Hangfire.Server.ServerHeartbeatProcess   - Server aly-pc:46000:d894d453 waiting for 00:00:30 delay before sending a heartbeat
+DEBUG 2024-06-22 18:12:32,087 [er #1] Hangfire.Processing.BackgroundExecution  - Execution loop ExpirationManager:9e72f3b8 has started in 7.4623 ms
+DEBUG 2024-06-22 18:12:32,088 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+DEBUG 2024-06-22 18:12:32,092 [or #1] Hangfire.Processing.BackgroundExecution  - Execution loop CountersAggregator:1c0b1c45 has started in 7.7831 ms
+INFO  2024-06-22 18:12:32,092 [og #1] Hangfire.Server.ServerWatchdog           - 1 servers were removed due to timeout
+DEBUG 2024-06-22 18:12:32,093 [er #1] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'AggregatedCounter' table...
+DEBUG 2024-06-22 18:12:32,093 [or #1] Hangfire.SqlServer.CountersAggregator    - Aggregating records in 'Counter' table...
+DEBUG 2024-06-22 18:12:32,098 [ss #1] Hangfire.Processing.BackgroundExecution  - Execution loop SqlServerHeartbeatProcess:a5c65a1c has started in 8.2761 ms
+DEBUG 2024-06-22 18:12:32,103 [er #1] Hangfire.Processing.BackgroundExecution  - Execution loop Worker:8e52ee48 has started in 9.3921 ms
+DEBUG 2024-06-22 18:12:32,109 [er #2] Hangfire.Processing.BackgroundExecution  - Execution loop Worker:15eeae30 has started in 14.6898 ms
+DEBUG 2024-06-22 18:12:32,114 [or #1] Hangfire.SqlServer.CountersAggregator    - Records from the 'Counter' table aggregated.
+DEBUG 2024-06-22 18:12:32,114 [er #3] Hangfire.Processing.BackgroundExecution  - Execution loop Worker:5b1120aa has started in 20.3134 ms
+DEBUG 2024-06-22 18:12:32,118 [er #4] Hangfire.Processing.BackgroundExecution  - Execution loop Worker:3e935cd3 has started in 23.7144 ms
+DEBUG 2024-06-22 18:12:32,122 [er #5] Hangfire.Processing.BackgroundExecution  - Execution loop Worker:c8a52343 has started in 27.8435 ms
+DEBUG 2024-06-22 18:12:32,127 [er #6] Hangfire.Processing.BackgroundExecution  - Execution loop Worker:6a7189fb has started in 32.8548 ms
+DEBUG 2024-06-22 18:12:32,133 [er #7] Hangfire.Processing.BackgroundExecution  - Execution loop Worker:3cdfcfe5 has started in 37.826 ms
+DEBUG 2024-06-22 18:12:32,137 [er #8] Hangfire.Processing.BackgroundExecution  - Execution loop Worker:92216048 has started in 42.8034 ms
+DEBUG 2024-06-22 18:12:32,141 [er #9] Hangfire.Processing.BackgroundExecution  - Execution loop Worker:cc912f32 has started in 46.4897 ms
+DEBUG 2024-06-22 18:12:32,146 [r #10] Hangfire.Processing.BackgroundExecution  - Execution loop Worker:dd24e38d has started in 51.428 ms
+DEBUG 2024-06-22 18:12:32,151 [r #11] Hangfire.Processing.BackgroundExecution  - Execution loop Worker:9837806f has started in 57.32 ms
+DEBUG 2024-06-22 18:12:32,158 [r #12] Hangfire.Processing.BackgroundExecution  - Execution loop Worker:a7a9d84c has started in 63.6034 ms
+DEBUG 2024-06-22 18:12:32,163 [r #13] Hangfire.Processing.BackgroundExecution  - Execution loop Worker:6f56503e has started in 69.3782 ms
+DEBUG 2024-06-22 18:12:32,169 [r #14] Hangfire.Processing.BackgroundExecution  - Execution loop Worker:f9bd456b has started in 75.2218 ms
+DEBUG 2024-06-22 18:12:32,175 [r #15] Hangfire.Processing.BackgroundExecution  - Execution loop Worker:328b9eab has started in 81.0724 ms
+DEBUG 2024-06-22 18:12:32,180 [r #16] Hangfire.Processing.BackgroundExecution  - Execution loop Worker:beda0bc9 has started in 86.0673 ms
+DEBUG 2024-06-22 18:12:32,186 [r #17] Hangfire.Processing.BackgroundExecution  - Execution loop Worker:91eae664 has started in 91.5154 ms
+DEBUG 2024-06-22 18:12:32,192 [r #18] Hangfire.Processing.BackgroundExecution  - Execution loop Worker:203d127c has started in 97.638 ms
+DEBUG 2024-06-22 18:12:32,198 [r #19] Hangfire.Processing.BackgroundExecution  - Execution loop Worker:132f8436 has started in 103.6335 ms
+DEBUG 2024-06-22 18:12:32,203 [er #1] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'AggregatedCounter' table.
+DEBUG 2024-06-22 18:12:32,203 [r #20] Hangfire.Processing.BackgroundExecution  - Execution loop Worker:95a9276c has started in 108.7437 ms
+DEBUG 2024-06-22 18:12:32,203 [er #1] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Job' table...
+DEBUG 2024-06-22 18:12:32,231 [er #1] Hangfire.Processing.BackgroundExecution  - Execution loop DelayedJobScheduler:63220926 has started in 32.9093 ms
+INFO  2024-06-22 18:12:32,232 [ss #1] Hangfire.Server.BackgroundServerProcess  - Server aly-pc:46000:d894d453 all the dispatchers started
+DEBUG 2024-06-22 18:12:32,239 [er #1] Hangfire.Processing.BackgroundExecution  - Execution loop RecurringJobScheduler:bf0779a7 has started in 34.0589 ms
+DEBUG 2024-06-22 18:12:32,268 [er #1] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Job' table.
+DEBUG 2024-06-22 18:12:32,268 [er #1] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'List' table...
+DEBUG 2024-06-22 18:12:32,276 [er #1] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'List' table.
+DEBUG 2024-06-22 18:12:32,276 [er #1] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Set' table...
+DEBUG 2024-06-22 18:12:32,279 [er #1] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Set' table.
+DEBUG 2024-06-22 18:12:32,279 [er #1] Hangfire.SqlServer.ExpirationManager     - Removing outdated records from the 'Hash' table...
+DEBUG 2024-06-22 18:12:32,281 [er #1] Hangfire.SqlServer.ExpirationManager     - Outdated records removed from the 'Hash' table.
+INFO  2024-06-22 18:12:33,932 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (37ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[DisplayName], [a].[IsDeleted], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name]
+FROM [AbpEditions] AS [a]
+WHERE [a].[Name] = N'Standard'
+INFO  2024-06-22 18:12:34,047 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (37ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2024-06-22 18:12:34,054 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2024-06-22 18:12:34,059 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2024-06-22 18:12:34,062 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2024-06-22 18:12:34,066 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2024-06-22 18:12:34,071 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2024-06-22 18:12:34,076 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2024-06-22 18:12:34,080 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2024-06-22 18:12:34,084 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2024-06-22 18:12:34,089 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2024-06-22 18:12:34,094 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2024-06-22 18:12:34,098 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2024-06-22 18:12:34,101 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__language_Name_1='?' (Size = 128)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpLanguages] AS [a]
+        WHERE [a].[TenantId] IS NULL AND [a].[Name] = @__language_Name_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2024-06-22 18:12:34,125 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[Description], [a].[DisplayName], [a].[IsDefault], [a].[IsDeleted], [a].[IsStatic], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[NormalizedName], [a].[TenantId]
+FROM [AbpRoles] AS [a]
+WHERE [a].[TenantId] IS NULL AND [a].[Name] = N'Admin'
+INFO  2024-06-22 18:12:34,233 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (67ms) [Parameters=[@__adminRoleForHost_Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Name]
+FROM [AbpPermissions] AS [a]
+WHERE [a].[Discriminator] = N'RolePermissionSetting' AND [a].[TenantId] IS NULL AND [a].[RoleId] = @__adminRoleForHost_Id_0
+INFO  2024-06-22 18:12:34,245 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[AuthenticationSource], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EmailAddress], [a].[EmailConfirmationCode], [a].[IsActive], [a].[IsDeleted], [a].[IsEmailConfirmed], [a].[IsLockoutEnabled], [a].[IsPhoneNumberConfirmed], [a].[IsTwoFactorEnabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[LockoutEndDateUtc], [a].[Name], [a].[NormalizedEmailAddress], [a].[NormalizedUserName], [a].[Password], [a].[PasswordResetCode], [a].[PhoneNumber], [a].[SecurityStamp], [a].[Surname], [a].[TenantId], [a].[UserName]
+FROM [AbpUsers] AS [a]
+WHERE [a].[TenantId] IS NULL AND [a].[UserName] = N'admin'
+INFO  2024-06-22 18:12:34,303 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__name_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpSettings] AS [a]
+        WHERE [a].[Name] = @__name_0 AND [a].[TenantId] IS NULL AND [a].[UserId] IS NULL) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2024-06-22 18:12:34,307 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpSettings] AS [a]
+        WHERE [a].[Name] = @__name_0 AND [a].[TenantId] IS NULL AND [a].[UserId] IS NULL) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2024-06-22 18:12:34,311 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AbpSettings] AS [a]
+        WHERE [a].[Name] = @__name_0 AND [a].[TenantId] IS NULL AND [a].[UserId] IS NULL) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+INFO  2024-06-22 18:12:34,371 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConnectionString], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EditionId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[TenancyName]
+FROM [AbpTenants] AS [a]
+WHERE [a].[TenancyName] = N'Default'
+INFO  2024-06-22 18:12:34,400 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@___tenantId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[Description], [a].[DisplayName], [a].[IsDefault], [a].[IsDeleted], [a].[IsStatic], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[NormalizedName], [a].[TenantId]
+FROM [AbpRoles] AS [a]
+WHERE [a].[TenantId] = @___tenantId_0 AND [a].[Name] = N'Admin'
+INFO  2024-06-22 18:12:34,570 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (162ms) [Parameters=[@___tenantId_0='?' (DbType = Int32), @__adminRole_Id_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Name]
+FROM [AbpPermissions] AS [a]
+WHERE [a].[Discriminator] = N'RolePermissionSetting' AND [a].[TenantId] = @___tenantId_0 AND [a].[RoleId] = @__adminRole_Id_1
+INFO  2024-06-22 18:12:34,583 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@___tenantId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[AuthenticationSource], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EmailAddress], [a].[EmailConfirmationCode], [a].[IsActive], [a].[IsDeleted], [a].[IsEmailConfirmed], [a].[IsLockoutEnabled], [a].[IsPhoneNumberConfirmed], [a].[IsTwoFactorEnabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[LockoutEndDateUtc], [a].[Name], [a].[NormalizedEmailAddress], [a].[NormalizedUserName], [a].[Password], [a].[PasswordResetCode], [a].[PhoneNumber], [a].[SecurityStamp], [a].[Surname], [a].[TenantId], [a].[UserName]
+FROM [AbpUsers] AS [a]
+WHERE [a].[TenantId] = @___tenantId_0 AND [a].[UserName] = N'admin'
+INFO  2024-06-22 18:12:34,660 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[DisplayName], [a].[Icon], [a].[IsDeleted], [a].[IsDisabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[TenantId]
+FROM [AbpLanguages] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR [a].[TenantId] IS NULL)
+INFO  2024-06-22 18:12:34,795 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (50ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConnectionString], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EditionId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[TenancyName]
+FROM [AbpTenants] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND [a].[Id] = @__p_0
+INFO  2024-06-22 18:12:34,803 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[DisplayName], [a].[Icon], [a].[IsDeleted], [a].[IsDisabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[TenantId]
+FROM [AbpLanguages] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR [a].[TenantId] = @__ef_filter__CurrentTenantId_2)
+INFO  2024-06-22 18:12:34,839 [1    ] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (20ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Int32), @__tenantId_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[TenantId], [a].[UserId], [a].[Value]
+FROM [AbpSettings] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[TenantId] = @__ef_filter__CurrentTenantId_1) AND [a].[UserId] IS NULL AND [a].[TenantId] = @__tenantId_1
+INFO  2024-06-22 18:12:34,850 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,fa,ja,zh-Hans
+INFO  2024-06-22 18:12:35,972 [1    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2024-06-22 18:12:35,976 [1    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2024-06-22 18:12:35,978 [1    ] Microsoft.Hosting.Lifetime               - Content root path: D:\02_University\01_Projects\LU.Prase\9.1.0\aspnet-core\src\LU.Prase.Web.Host
+INFO  2024-06-22 18:12:36,005 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/ - - -
+INFO  2024-06-22 18:12:36,808 [orker] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LU.Prase.Web.Host.Controllers.HomeController.Index (LU.Prase.Web.Host)'
+INFO  2024-06-22 18:12:36,892 [orker] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller LU.Prase.Web.Host.Controllers.HomeController (LU.Prase.Web.Host).
+INFO  2024-06-22 18:12:37,074 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (17ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([BrowserInfo], [ClientIpAddress], [ClientName], [CustomData], [Exception], [ExceptionMessage], [ExecutionDuration], [ExecutionTime], [ImpersonatorTenantId], [ImpersonatorUserId], [MethodName], [Parameters], [ReturnValue], [ServiceName], [TenantId], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+DEBUG 2024-06-22 18:12:37,101 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:12:37,101 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+INFO  2024-06-22 18:12:37,114 [orker] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2024-06-22 18:12:37,125 [orker] c.Infrastructure.ControllerActionInvoker - Executed action LU.Prase.Web.Host.Controllers.HomeController.Index (LU.Prase.Web.Host) in 223.2439ms
+INFO  2024-06-22 18:12:37,129 [orker] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LU.Prase.Web.Host.Controllers.HomeController.Index (LU.Prase.Web.Host)'
+INFO  2024-06-22 18:12:37,148 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - - -
+INFO  2024-06-22 18:12:37,159 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/ - 302 - - 1157.8944ms
+INFO  2024-06-22 18:12:37,269 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - 200 - text/html;charset=utf-8 113.9759ms
+INFO  2024-06-22 18:12:37,300 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/ui/abp.swagger.js - - -
+INFO  2024-06-22 18:12:37,304 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/ui/abp.js - - -
+INFO  2024-06-22 18:12:37,309 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - -
+INFO  2024-06-22 18:12:37,313 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - - -
+INFO  2024-06-22 18:12:37,325 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript;+charset=utf-8 14.9300ms
+INFO  2024-06-22 18:12:37,371 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 64.1309ms
+INFO  2024-06-22 18:12:38,062 [orker] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\02_University\01_Projects\LU.Prase\9.1.0\aspnet-core\src\LU.Prase.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2024-06-22 18:12:38,066 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/ui/abp.js - 200 3697 text/javascript 769.4335ms
+INFO  2024-06-22 18:12:38,476 [orker] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'D:\02_University\01_Projects\LU.Prase\9.1.0\aspnet-core\src\LU.Prase.Web.Host\wwwroot\swagger\ui\abp.swagger.js'
+INFO  2024-06-22 18:12:38,481 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/ui/abp.swagger.js - 200 8029 text/javascript 1183.9855ms
+INFO  2024-06-22 18:12:38,511 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - - -
+INFO  2024-06-22 18:12:38,520 [orker] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LU.Prase.Web.Host.Controllers.AntiForgeryController.SetCookie (LU.Prase.Web.Host)'
+INFO  2024-06-22 18:12:38,536 [orker] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller LU.Prase.Web.Host.Controllers.AntiForgeryController (LU.Prase.Web.Host).
+INFO  2024-06-22 18:12:38,555 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - -
+INFO  2024-06-22 18:12:38,579 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/favicon-32x32.png - - -
+INFO  2024-06-22 18:12:38,587 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (15ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([BrowserInfo], [ClientIpAddress], [ClientName], [CustomData], [Exception], [ExceptionMessage], [ExecutionDuration], [ExecutionTime], [ImpersonatorTenantId], [ImpersonatorUserId], [MethodName], [Parameters], [ReturnValue], [ServiceName], [TenantId], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+INFO  2024-06-22 18:12:38,600 [orker] NetCore.StaticFiles.StaticFileMiddleware - The file /favicon-32x32.png was not modified
+INFO  2024-06-22 18:12:38,606 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/favicon-32x32.png - 304 - image/png 27.3605ms
+INFO  2024-06-22 18:12:38,614 [orker] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-06-22 18:12:38,629 [orker] c.Infrastructure.ControllerActionInvoker - Executed action LU.Prase.Web.Host.Controllers.AntiForgeryController.SetCookie (LU.Prase.Web.Host) in 87.7393ms
+INFO  2024-06-22 18:12:38,633 [orker] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LU.Prase.Web.Host.Controllers.AntiForgeryController.SetCookie (LU.Prase.Web.Host)'
+INFO  2024-06-22 18:12:38,638 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - 200 - application/json;+charset=utf-8 128.1134ms
+INFO  2024-06-22 18:12:38,859 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 302.1016ms
+DEBUG 2024-06-22 18:12:42,114 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:12:42,114 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+INFO  2024-06-22 18:12:46,302 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44311/api/TokenAuth/Authenticate - application/json 54
+INFO  2024-06-22 18:12:46,310 [orker] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2024-06-22 18:12:46,313 [orker] pNetCore.Cors.Infrastructure.CorsService - Request origin https://localhost:44311 does not have permission to access the resource.
+INFO  2024-06-22 18:12:46,319 [orker] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LU.Prase.Controllers.TokenAuthController.Authenticate (LU.Prase.Web.Core)'
+INFO  2024-06-22 18:12:46,333 [orker] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LU.Prase.Models.TokenAuth.AuthenticateResultModel] Authenticate(LU.Prase.Models.TokenAuth.AuthenticateModel) on controller LU.Prase.Controllers.TokenAuthController (LU.Prase.Web.Core).
+INFO  2024-06-22 18:12:46,625 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (216ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConnectionString], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EditionId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[TenancyName]
+FROM [AbpTenants] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND [a].[TenancyName] = N'Default'
+INFO  2024-06-22 18:12:46,782 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (13ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_2='?' (DbType = Int32), @__normalizedUserNameOrEmailAddress_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[AuthenticationSource], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EmailAddress], [a].[EmailConfirmationCode], [a].[IsActive], [a].[IsDeleted], [a].[IsEmailConfirmed], [a].[IsLockoutEnabled], [a].[IsPhoneNumberConfirmed], [a].[IsTwoFactorEnabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[LockoutEndDateUtc], [a].[Name], [a].[NormalizedEmailAddress], [a].[NormalizedUserName], [a].[Password], [a].[PasswordResetCode], [a].[PhoneNumber], [a].[SecurityStamp], [a].[Surname], [a].[TenantId], [a].[UserName]
+FROM [AbpUsers] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR [a].[TenantId] = @__ef_filter__CurrentTenantId_2) AND ([a].[NormalizedUserName] = @__normalizedUserNameOrEmailAddress_0 OR [a].[NormalizedEmailAddress] = @__normalizedUserNameOrEmailAddress_0)
+INFO  2024-06-22 18:12:46,957 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (35ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Int32), @__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[CreationTime], [a].[CreatorUserId], [a].[TenantId], [a].[UserId]
+FROM [AbpUserClaims] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[TenantId] = @__ef_filter__CurrentTenantId_1) AND [a].[UserId] = @__p_0
+INFO  2024-06-22 18:12:47,012 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__ef_filter__p_2='?' (DbType = Boolean), @__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Int32), @__user_Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Name]
+FROM [AbpUserRoles] AS [a]
+INNER JOIN (
+    SELECT [a0].[Id], [a0].[Name]
+    FROM [AbpRoles] AS [a0]
+    WHERE (@__ef_filter__p_2 = CAST(1 AS bit) OR [a0].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_0 = CAST(1 AS bit) OR [a0].[TenantId] = @__ef_filter__CurrentTenantId_1)
+) AS [t] ON [a].[RoleId] = [t].[Id]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[TenantId] = @__ef_filter__CurrentTenantId_1) AND [a].[UserId] = @__user_Id_0
+DEBUG 2024-06-22 18:12:47,115 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:12:47,115 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+INFO  2024-06-22 18:12:47,272 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (244ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_2='?' (DbType = Int32), @__user_Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Name]
+FROM [AbpUserOrganizationUnits] AS [a]
+INNER JOIN (
+    SELECT [a0].[OrganizationUnitId], [a0].[RoleId]
+    FROM [AbpOrganizationUnitRoles] AS [a0]
+    WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a0].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR [a0].[TenantId] = @__ef_filter__CurrentTenantId_2)
+) AS [t] ON [a].[OrganizationUnitId] = [t].[OrganizationUnitId]
+INNER JOIN (
+    SELECT [a1].[Id], [a1].[Name]
+    FROM [AbpRoles] AS [a1]
+    WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a1].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR [a1].[TenantId] = @__ef_filter__CurrentTenantId_2)
+) AS [t0] ON [t].[RoleId] = [t0].[Id]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR [a].[TenantId] = @__ef_filter__CurrentTenantId_2) AND [a].[UserId] = @__user_Id_0
+INFO  2024-06-22 18:12:47,290 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_2='?' (DbType = Int32), @__normalizedName_0='?' (Size = 32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[Description], [a].[DisplayName], [a].[IsDefault], [a].[IsDeleted], [a].[IsStatic], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[NormalizedName], [a].[TenantId]
+FROM [AbpRoles] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR [a].[TenantId] = @__ef_filter__CurrentTenantId_2) AND [a].[NormalizedName] = @__normalizedName_0
+INFO  2024-06-22 18:12:47,311 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[CreationTime], [a].[CreatorUserId], [a].[RoleId], [a].[TenantId]
+FROM [AbpRoleClaims] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[TenantId] = @__ef_filter__CurrentTenantId_1) AND [a].[RoleId] = @__p_0
+INFO  2024-06-22 18:12:47,318 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44311/api/TokenAuth/Authenticate - application/json 54
+INFO  2024-06-22 18:12:47,323 [orker] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2024-06-22 18:12:47,330 [orker] pNetCore.Cors.Infrastructure.CorsService - Request origin https://localhost:44311 does not have permission to access the resource.
+INFO  2024-06-22 18:12:47,335 [orker] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LU.Prase.Controllers.TokenAuthController.Authenticate (LU.Prase.Web.Core)'
+INFO  2024-06-22 18:12:47,343 [orker] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[LU.Prase.Models.TokenAuth.AuthenticateResultModel] Authenticate(LU.Prase.Models.TokenAuth.AuthenticateModel) on controller LU.Prase.Controllers.TokenAuthController (LU.Prase.Web.Core).
+INFO  2024-06-22 18:12:47,355 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConnectionString], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EditionId], [a].[IsActive], [a].[IsDeleted], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[TenancyName]
+FROM [AbpTenants] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND [a].[TenancyName] = N'Default'
+INFO  2024-06-22 18:12:47,367 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_2='?' (DbType = Int32), @__normalizedUserNameOrEmailAddress_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[AuthenticationSource], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[EmailAddress], [a].[EmailConfirmationCode], [a].[IsActive], [a].[IsDeleted], [a].[IsEmailConfirmed], [a].[IsLockoutEnabled], [a].[IsPhoneNumberConfirmed], [a].[IsTwoFactorEnabled], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[LockoutEndDateUtc], [a].[Name], [a].[NormalizedEmailAddress], [a].[NormalizedUserName], [a].[Password], [a].[PasswordResetCode], [a].[PhoneNumber], [a].[SecurityStamp], [a].[Surname], [a].[TenantId], [a].[UserName]
+FROM [AbpUsers] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR [a].[TenantId] = @__ef_filter__CurrentTenantId_2) AND ([a].[NormalizedUserName] = @__normalizedUserNameOrEmailAddress_0 OR [a].[NormalizedEmailAddress] = @__normalizedUserNameOrEmailAddress_0)
+INFO  2024-06-22 18:12:47,417 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (29ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (DbType = DateTime2), @p4='?' (Size = 1) (DbType = Byte), @p5='?' (Size = 64), @p6='?' (DbType = Int32), @p7='?' (DbType = Int64), @p8='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AbpUserLoginAttempts] ([BrowserInfo], [ClientIpAddress], [ClientName], [CreationTime], [Result], [TenancyName], [TenantId], [UserId], [UserNameOrEmailAddress])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+INFO  2024-06-22 18:12:47,446 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Int32), @__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[CreationTime], [a].[CreatorUserId], [a].[TenantId], [a].[UserId]
+FROM [AbpUserClaims] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[TenantId] = @__ef_filter__CurrentTenantId_1) AND [a].[UserId] = @__p_0
+INFO  2024-06-22 18:12:47,456 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_2='?' (DbType = Boolean), @__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Int32), @__user_Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Name]
+FROM [AbpUserRoles] AS [a]
+INNER JOIN (
+    SELECT [a0].[Id], [a0].[Name]
+    FROM [AbpRoles] AS [a0]
+    WHERE (@__ef_filter__p_2 = CAST(1 AS bit) OR [a0].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_0 = CAST(1 AS bit) OR [a0].[TenantId] = @__ef_filter__CurrentTenantId_1)
+) AS [t] ON [a].[RoleId] = [t].[Id]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[TenantId] = @__ef_filter__CurrentTenantId_1) AND [a].[UserId] = @__user_Id_0
+INFO  2024-06-22 18:12:47,480 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (17ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_2='?' (DbType = Int32), @__user_Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Name]
+FROM [AbpUserOrganizationUnits] AS [a]
+INNER JOIN (
+    SELECT [a0].[OrganizationUnitId], [a0].[RoleId]
+    FROM [AbpOrganizationUnitRoles] AS [a0]
+    WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a0].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR [a0].[TenantId] = @__ef_filter__CurrentTenantId_2)
+) AS [t] ON [a].[OrganizationUnitId] = [t].[OrganizationUnitId]
+INNER JOIN (
+    SELECT [a1].[Id], [a1].[Name]
+    FROM [AbpRoles] AS [a1]
+    WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a1].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR [a1].[TenantId] = @__ef_filter__CurrentTenantId_2)
+) AS [t0] ON [t].[RoleId] = [t0].[Id]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR [a].[TenantId] = @__ef_filter__CurrentTenantId_2) AND [a].[UserId] = @__user_Id_0
+INFO  2024-06-22 18:12:47,486 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__p_1='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_2='?' (DbType = Int32), @__normalizedName_0='?' (Size = 32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[CreatorUserId], [a].[DeleterUserId], [a].[DeletionTime], [a].[Description], [a].[DisplayName], [a].[IsDefault], [a].[IsDeleted], [a].[IsStatic], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[NormalizedName], [a].[TenantId]
+FROM [AbpRoles] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[IsDeleted] = CAST(0 AS bit)) AND (@__ef_filter__p_1 = CAST(1 AS bit) OR [a].[TenantId] = @__ef_filter__CurrentTenantId_2) AND [a].[NormalizedName] = @__normalizedName_0
+INFO  2024-06-22 18:12:47,504 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[CreationTime], [a].[CreatorUserId], [a].[RoleId], [a].[TenantId]
+FROM [AbpRoleClaims] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[TenantId] = @__ef_filter__CurrentTenantId_1) AND [a].[RoleId] = @__p_0
+INFO  2024-06-22 18:12:47,513 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (DbType = DateTime2), @p4='?' (Size = 1) (DbType = Byte), @p5='?' (Size = 64), @p6='?' (DbType = Int32), @p7='?' (DbType = Int64), @p8='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AbpUserLoginAttempts] ([BrowserInfo], [ClientIpAddress], [ClientName], [CreationTime], [Result], [TenancyName], [TenantId], [UserId], [UserNameOrEmailAddress])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+INFO  2024-06-22 18:12:47,532 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([BrowserInfo], [ClientIpAddress], [ClientName], [CustomData], [Exception], [ExceptionMessage], [ExecutionDuration], [ExecutionTime], [ImpersonatorTenantId], [ImpersonatorUserId], [MethodName], [Parameters], [ReturnValue], [ServiceName], [TenantId], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+INFO  2024-06-22 18:12:47,546 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([BrowserInfo], [ClientIpAddress], [ClientName], [CustomData], [Exception], [ExceptionMessage], [ExecutionDuration], [ExecutionTime], [ImpersonatorTenantId], [ImpersonatorUserId], [MethodName], [Parameters], [ReturnValue], [ServiceName], [TenantId], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+INFO  2024-06-22 18:12:47,553 [orker] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-06-22 18:12:47,559 [orker] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-06-22 18:12:47,566 [orker] c.Infrastructure.ControllerActionInvoker - Executed action LU.Prase.Controllers.TokenAuthController.Authenticate (LU.Prase.Web.Core) in 1228.4465ms
+INFO  2024-06-22 18:12:47,569 [orker] c.Infrastructure.ControllerActionInvoker - Executed action LU.Prase.Controllers.TokenAuthController.Authenticate (LU.Prase.Web.Core) in 219.047ms
+INFO  2024-06-22 18:12:47,574 [orker] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LU.Prase.Controllers.TokenAuthController.Authenticate (LU.Prase.Web.Core)'
+INFO  2024-06-22 18:12:47,578 [orker] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LU.Prase.Controllers.TokenAuthController.Authenticate (LU.Prase.Web.Core)'
+INFO  2024-06-22 18:12:47,583 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44311/api/TokenAuth/Authenticate - 200 - application/json;+charset=utf-8 1278.2891ms
+INFO  2024-06-22 18:12:47,588 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44311/api/TokenAuth/Authenticate - 200 - application/json;+charset=utf-8 267.9784ms
+INFO  2024-06-22 18:12:47,594 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - - -
+INFO  2024-06-22 18:12:47,599 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - - -
+INFO  2024-06-22 18:12:47,613 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - 200 - text/html;charset=utf-8 18.4401ms
+INFO  2024-06-22 18:12:47,621 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - 200 - text/html;charset=utf-8 25.8379ms
+INFO  2024-06-22 18:12:47,636 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - -
+INFO  2024-06-22 18:12:47,640 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - - -
+INFO  2024-06-22 18:12:47,646 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript;+charset=utf-8 19.4283ms
+INFO  2024-06-22 18:12:47,672 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 35.4991ms
+INFO  2024-06-22 18:12:47,861 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - - -
+INFO  2024-06-22 18:12:47,899 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - -
+INFO  2024-06-22 18:12:47,971 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__ef_filter__CurrentTenantId_1='?' (DbType = Int32), @__userId_0='?' (DbType = Int64), @__tenantId_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [a].[Id], [a].[CreationTime], [a].[CreatorUserId], [a].[LastModificationTime], [a].[LastModifierUserId], [a].[Name], [a].[TenantId], [a].[UserId], [a].[Value]
+FROM [AbpSettings] AS [a]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [a].[TenantId] = @__ef_filter__CurrentTenantId_1) AND [a].[UserId] = @__userId_0 AND [a].[TenantId] = @__tenantId_1
+INFO  2024-06-22 18:12:48,019 [orker] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LU.Prase.Web.Host.Controllers.AntiForgeryController.SetCookie (LU.Prase.Web.Host)'
+INFO  2024-06-22 18:12:48,026 [orker] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller LU.Prase.Web.Host.Controllers.AntiForgeryController (LU.Prase.Web.Host).
+INFO  2024-06-22 18:12:48,044 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([BrowserInfo], [ClientIpAddress], [ClientName], [CustomData], [Exception], [ExceptionMessage], [ExecutionDuration], [ExecutionTime], [ImpersonatorTenantId], [ImpersonatorUserId], [MethodName], [Parameters], [ReturnValue], [ServiceName], [TenantId], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+INFO  2024-06-22 18:12:48,051 [orker] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-06-22 18:12:48,054 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 153.1875ms
+INFO  2024-06-22 18:12:48,061 [orker] c.Infrastructure.ControllerActionInvoker - Executed action LU.Prase.Web.Host.Controllers.AntiForgeryController.SetCookie (LU.Prase.Web.Host) in 28.989ms
+INFO  2024-06-22 18:12:48,066 [orker] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LU.Prase.Web.Host.Controllers.AntiForgeryController.SetCookie (LU.Prase.Web.Host)'
+INFO  2024-06-22 18:12:48,071 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - 200 - application/json;+charset=utf-8 212.8280ms
+DEBUG 2024-06-22 18:12:52,131 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:12:52,131 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+DEBUG 2024-06-22 18:12:57,141 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:12:57,141 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+DEBUG 2024-06-22 18:13:02,103 [ss #1] Hangfire.Server.ServerHeartbeatProcess   - Server aly-pc:46000:d894d453 heartbeat successfully sent
+DEBUG 2024-06-22 18:13:02,103 [ss #1] Hangfire.Server.ServerHeartbeatProcess   - Server aly-pc:46000:d894d453 waiting for 00:00:30 delay before sending a heartbeat
+DEBUG 2024-06-22 18:13:02,146 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:13:02,146 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+INFO  2024-06-22 18:13:04,446 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - -
+INFO  2024-06-22 18:13:04,476 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 29.6489ms
+INFO  2024-06-22 18:13:04,647 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/favicon.ico - - -
+INFO  2024-06-22 18:13:04,654 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/favicon.ico - 404 - - 6.6709ms
+INFO  2024-06-22 18:13:04,659 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44311/favicon.ico, Response status code: 404
+DEBUG 2024-06-22 18:13:07,160 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:13:07,160 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+DEBUG 2024-06-22 18:13:12,171 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:13:12,171 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+DEBUG 2024-06-22 18:13:17,177 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:13:17,177 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+DEBUG 2024-06-22 18:13:22,178 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:13:22,178 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+DEBUG 2024-06-22 18:13:27,191 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:13:27,191 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+DEBUG 2024-06-22 18:13:32,126 [ss #1] Hangfire.Server.ServerHeartbeatProcess   - Server aly-pc:46000:d894d453 heartbeat successfully sent
+DEBUG 2024-06-22 18:13:32,126 [ss #1] Hangfire.Server.ServerHeartbeatProcess   - Server aly-pc:46000:d894d453 waiting for 00:00:30 delay before sending a heartbeat
+DEBUG 2024-06-22 18:13:32,200 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:13:32,200 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+DEBUG 2024-06-22 18:13:37,208 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:13:37,208 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+DEBUG 2024-06-22 18:13:42,218 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:13:42,218 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+DEBUG 2024-06-22 18:13:47,219 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:13:47,220 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+INFO  2024-06-22 18:13:51,861 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/api/services/app/Machine/Get?Id=1 - - -
+INFO  2024-06-22 18:13:51,876 [orker] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LU.Prase.Machines.MachineAppService.GetAsync (LU.Prase.Application)'
+INFO  2024-06-22 18:13:51,889 [orker] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Get", controller = "Machine"}. Executing controller action with signature System.Threading.Tasks.Task`1[LU.Prase.Machines.Dto.MachineDto] GetAsync(LU.Prase.Machines.Dto.MachineDto) on controller LU.Prase.Machines.MachineAppService (LU.Prase.Application).
+INFO  2024-06-22 18:13:52,132 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (212ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreationTime], [m].[CreatorUserId], [m].[DeleterUserId], [m].[DeletionTime], [m].[IsDeleted], [m].[LastModificationTime], [m].[LastModifierUserId], [m].[MachineStates], [m].[Name], [m].[Notes]
+FROM [Machines] AS [m]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [m].[IsDeleted] = CAST(0 AS bit)) AND [m].[Id] = @__p_0
+INFO  2024-06-22 18:13:52,188 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (12ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([BrowserInfo], [ClientIpAddress], [ClientName], [CustomData], [Exception], [ExceptionMessage], [ExecutionDuration], [ExecutionTime], [ImpersonatorTenantId], [ImpersonatorUserId], [MethodName], [Parameters], [ReturnValue], [ServiceName], [TenantId], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+INFO  2024-06-22 18:13:52,195 [orker] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-06-22 18:13:52,201 [orker] c.Infrastructure.ControllerActionInvoker - Executed action LU.Prase.Machines.MachineAppService.GetAsync (LU.Prase.Application) in 307.401ms
+INFO  2024-06-22 18:13:52,206 [orker] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LU.Prase.Machines.MachineAppService.GetAsync (LU.Prase.Application)'
+INFO  2024-06-22 18:13:52,210 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/api/services/app/Machine/Get?Id=1 - 200 - application/json;+charset=utf-8 351.7031ms
+DEBUG 2024-06-22 18:13:52,224 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:13:52,224 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+DEBUG 2024-06-22 18:13:57,230 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:13:57,230 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+DEBUG 2024-06-22 18:14:02,143 [ss #1] Hangfire.Server.ServerHeartbeatProcess   - Server aly-pc:46000:d894d453 heartbeat successfully sent
+DEBUG 2024-06-22 18:14:02,143 [ss #1] Hangfire.Server.ServerHeartbeatProcess   - Server aly-pc:46000:d894d453 waiting for 00:00:30 delay before sending a heartbeat
+DEBUG 2024-06-22 18:14:02,232 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:14:02,232 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+INFO  2024-06-22 18:14:03,348 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/api/services/app/Machine/Get?Id=2 - - -
+INFO  2024-06-22 18:14:03,357 [orker] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LU.Prase.Machines.MachineAppService.GetAsync (LU.Prase.Application)'
+INFO  2024-06-22 18:14:03,364 [orker] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Get", controller = "Machine"}. Executing controller action with signature System.Threading.Tasks.Task`1[LU.Prase.Machines.Dto.MachineDto] GetAsync(LU.Prase.Machines.Dto.MachineDto) on controller LU.Prase.Machines.MachineAppService (LU.Prase.Application).
+INFO  2024-06-22 18:14:03,376 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreationTime], [m].[CreatorUserId], [m].[DeleterUserId], [m].[DeletionTime], [m].[IsDeleted], [m].[LastModificationTime], [m].[LastModifierUserId], [m].[MachineStates], [m].[Name], [m].[Notes]
+FROM [Machines] AS [m]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [m].[IsDeleted] = CAST(0 AS bit)) AND [m].[Id] = @__p_0
+INFO  2024-06-22 18:14:03,390 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([BrowserInfo], [ClientIpAddress], [ClientName], [CustomData], [Exception], [ExceptionMessage], [ExecutionDuration], [ExecutionTime], [ImpersonatorTenantId], [ImpersonatorUserId], [MethodName], [Parameters], [ReturnValue], [ServiceName], [TenantId], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+INFO  2024-06-22 18:14:03,395 [orker] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-06-22 18:14:03,400 [orker] c.Infrastructure.ControllerActionInvoker - Executed action LU.Prase.Machines.MachineAppService.GetAsync (LU.Prase.Application) in 31.2559ms
+INFO  2024-06-22 18:14:03,405 [orker] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LU.Prase.Machines.MachineAppService.GetAsync (LU.Prase.Application)'
+INFO  2024-06-22 18:14:03,410 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/api/services/app/Machine/Get?Id=2 - 200 - application/json;+charset=utf-8 64.7537ms
+DEBUG 2024-06-22 18:14:07,247 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:14:07,247 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+INFO  2024-06-22 18:14:09,151 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/api/services/app/Machine/Get?Id=3 - - -
+INFO  2024-06-22 18:14:09,161 [orker] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LU.Prase.Machines.MachineAppService.GetAsync (LU.Prase.Application)'
+INFO  2024-06-22 18:14:09,173 [orker] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Get", controller = "Machine"}. Executing controller action with signature System.Threading.Tasks.Task`1[LU.Prase.Machines.Dto.MachineDto] GetAsync(LU.Prase.Machines.Dto.MachineDto) on controller LU.Prase.Machines.MachineAppService (LU.Prase.Application).
+INFO  2024-06-22 18:14:09,204 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (20ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreationTime], [m].[CreatorUserId], [m].[DeleterUserId], [m].[DeletionTime], [m].[IsDeleted], [m].[LastModificationTime], [m].[LastModifierUserId], [m].[MachineStates], [m].[Name], [m].[Notes]
+FROM [Machines] AS [m]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [m].[IsDeleted] = CAST(0 AS bit)) AND [m].[Id] = @__p_0
+INFO  2024-06-22 18:14:09,236 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (19ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([BrowserInfo], [ClientIpAddress], [ClientName], [CustomData], [Exception], [ExceptionMessage], [ExecutionDuration], [ExecutionTime], [ImpersonatorTenantId], [ImpersonatorUserId], [MethodName], [Parameters], [ReturnValue], [ServiceName], [TenantId], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+INFO  2024-06-22 18:14:09,244 [orker] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-06-22 18:14:09,249 [orker] c.Infrastructure.ControllerActionInvoker - Executed action LU.Prase.Machines.MachineAppService.GetAsync (LU.Prase.Application) in 71.407ms
+INFO  2024-06-22 18:14:09,255 [orker] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LU.Prase.Machines.MachineAppService.GetAsync (LU.Prase.Application)'
+INFO  2024-06-22 18:14:09,261 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/api/services/app/Machine/Get?Id=3 - 200 - application/json;+charset=utf-8 109.9393ms
+DEBUG 2024-06-22 18:14:12,252 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:14:12,252 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+INFO  2024-06-22 18:14:13,898 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/api/services/app/Machine/Get?Id=4 - - -
+INFO  2024-06-22 18:14:13,906 [orker] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'LU.Prase.Machines.MachineAppService.GetAsync (LU.Prase.Application)'
+INFO  2024-06-22 18:14:13,916 [orker] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Get", controller = "Machine"}. Executing controller action with signature System.Threading.Tasks.Task`1[LU.Prase.Machines.Dto.MachineDto] GetAsync(LU.Prase.Machines.Dto.MachineDto) on controller LU.Prase.Machines.MachineAppService (LU.Prase.Application).
+INFO  2024-06-22 18:14:13,931 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreationTime], [m].[CreatorUserId], [m].[DeleterUserId], [m].[DeletionTime], [m].[IsDeleted], [m].[LastModificationTime], [m].[LastModifierUserId], [m].[MachineStates], [m].[Name], [m].[Notes]
+FROM [Machines] AS [m]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [m].[IsDeleted] = CAST(0 AS bit)) AND [m].[Id] = @__p_0
+INFO  2024-06-22 18:14:14,025 [orker] oft.EntityFrameworkCore.Database.Command - Executed DbCommand (83ms) [Parameters=[@p0='?' (Size = 512), @p1='?' (Size = 64), @p2='?' (Size = 128), @p3='?' (Size = 2000), @p4='?' (Size = 2000), @p5='?' (Size = 1024), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (DbType = Int64), @p10='?' (Size = 256), @p11='?' (Size = 1024), @p12='?' (Size = 4000), @p13='?' (Size = 256), @p14='?' (DbType = Int32), @p15='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AbpAuditLogs] ([BrowserInfo], [ClientIpAddress], [ClientName], [CustomData], [Exception], [ExceptionMessage], [ExecutionDuration], [ExecutionTime], [ImpersonatorTenantId], [ImpersonatorUserId], [MethodName], [Parameters], [ReturnValue], [ServiceName], [TenantId], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+INFO  2024-06-22 18:14:14,031 [orker] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2024-06-22 18:14:14,036 [orker] c.Infrastructure.ControllerActionInvoker - Executed action LU.Prase.Machines.MachineAppService.GetAsync (LU.Prase.Application) in 116.2429ms
+INFO  2024-06-22 18:14:14,041 [orker] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'LU.Prase.Machines.MachineAppService.GetAsync (LU.Prase.Application)'
+INFO  2024-06-22 18:14:14,047 [orker] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/api/services/app/Machine/Get?Id=4 - 200 - application/json;+charset=utf-8 150.1359ms
+DEBUG 2024-06-22 18:14:17,257 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:14:17,257 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+DEBUG 2024-06-22 18:14:22,257 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:14:22,257 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+DEBUG 2024-06-22 18:14:27,266 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:14:27,266 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+DEBUG 2024-06-22 18:14:32,268 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:14:32,268 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+DEBUG 2024-06-22 18:14:32,373 [ss #1] Hangfire.Server.ServerHeartbeatProcess   - Server aly-pc:46000:d894d453 heartbeat successfully sent
+DEBUG 2024-06-22 18:14:32,373 [ss #1] Hangfire.Server.ServerHeartbeatProcess   - Server aly-pc:46000:d894d453 waiting for 00:00:30 delay before sending a heartbeat
+DEBUG 2024-06-22 18:14:37,276 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:14:37,276 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
+DEBUG 2024-06-22 18:14:42,280 [er #1] fire.Server.ServerJobCancellationWatcher - Checking for aborted jobs...
+DEBUG 2024-06-22 18:14:42,280 [er #1] fire.Server.ServerJobCancellationWatcher - No newly aborted jobs found.
