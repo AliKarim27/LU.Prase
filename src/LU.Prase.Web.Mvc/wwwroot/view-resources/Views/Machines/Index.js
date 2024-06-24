@@ -55,10 +55,10 @@
                 defaultContent: '',
                 render: (data, type, row, meta) => {
                     return [
-                        `   <button type="button" class="btn btn-sm bg-secondary edit-role" data-role-id="${row.id}" data-toggle="modal" data-target="#RoleEditModal">`,
+                        `   <button type="button" class="btn btn-sm bg-secondary edit-machine" data-machine-id="${row.id}" data-toggle="modal" data-target="#MachineEditModal">`,
                         `       <i class="fas fa-pencil-alt"></i> ${l('Edit')}`,
                         '   </button>',
-                        `   <button type="button" class="btn btn-sm bg-danger delete-role" data-role-id="${row.id}" data-role-name="${row.name}">`,
+                        `   <button type="button" class="btn btn-sm bg-danger delete-machine" data-machine-id="${row.id}" data-machine-name="${row.name}">`,
                         `       <i class="fas fa-trash"></i> ${l('Delete')}`,
                         '   </button>',
                     ].join('');
@@ -95,18 +95,18 @@
             });
     });
 
-    $(document).on('click', '.delete-role', function () {
-        var roleId = $(this).attr("data-role-id");
-        var roleName = $(this).attr('data-role-name');
-        deleteRole(roleId, roleName);
+    $(document).on('click', '.delete-machine', function () {
+        var roleId = $(this).attr("data-machine-id");
+        var roleName = $(this).attr('data-machine-name');
+        deleteMachine(roleId, roleName);
     });
 
     $(document).on('click', '.edit-machine', function (e) {
-        var roleId = $(this).attr("data-role-id");
+        var machineId = $(this).attr("data-machine-id");
 
         e.preventDefault();
         abp.ajax({
-            url: abp.appPath + 'Machines/EditModal?machineId=' + roleId,
+            url: abp.appPath + 'Machines/EditModal?machineId=' + machineId,
             type: 'POST',
             dataType: 'html',
             success: function (content) {
@@ -117,20 +117,20 @@
         })
     });
 
-    abp.event.on('role.edited', (data) => {
+    abp.event.on('machine.edited', (data) => {
         _$machinesTable.ajax.reload();
     });
 
-    function deleteRole(roleId, roleName) {
+    function deleteMachine(machineId, machineName) {
         abp.message.confirm(
             abp.utils.formatString(
                 l('AreYouSureWantToDelete'),
-                roleName),
+                machineName),
             null,
             (isConfirmed) => {
                 if (isConfirmed) {
-                    _roleService.delete({
-                        id: roleId
+                    _machineService.delete({
+                        id: machineId
                     }).done(() => {
                         abp.notify.info(l('SuccessfullyDeleted'));
                         _$machinesTable.ajax.reload();

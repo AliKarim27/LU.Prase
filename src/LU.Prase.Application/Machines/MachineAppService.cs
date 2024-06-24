@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace LU.Prase.Machines
 {
-    public class MachineAppService : AsyncCrudAppService<Machine, MachineDto, long, PagedMachineRequest, CreateMachineDto, UpdateMachineDto, MachineDto>
+    public class MachineAppService : AsyncCrudAppService<Machine, MachineDto, long, PagedMachineRequest, CreateMachineDto, UpdateMachineDto, EntityDto<long>>
     {
         public MachineAppService(IRepository<Machine, long> repository) : base(repository)
         {
