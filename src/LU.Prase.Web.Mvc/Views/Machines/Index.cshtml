@@ -1,7 +1,13 @@
-﻿@using LU.Prase.Web.Startup
+﻿@using LU.Prase.Authorization
+@using LU.Prase.Web.Startup
 @{
     ViewBag.Title = L("Machines");
     ViewBag.CurrentPageName = PageNames.Machines;
+
+
+    var createMachinePermission = await PermissionChecker.IsGrantedAsync(PermissionNames.Pages_CreateMachines);
+    var editMachinePermission = await PermissionChecker.IsGrantedAsync(PermissionNames.Pages_EditMachines);
+    var deleteMachinePermission = await PermissionChecker.IsGrantedAsync(PermissionNames.Pages_DeleteMachines);
 }
 @section scripts
 {
@@ -19,12 +25,15 @@
             <div class="col-sm-6">
                 <h1>@L("Machines")</h1>
             </div>
-            <div class="col-sm-6">
-                <a href="javascript:;" data-toggle="modal" data-target="#MachineCreateModal" class="btn bg-blue float-sm-right">
-                    <i class="fa fa-plus-square"></i>
-                    @L("Create")
-                </a>
-            </div>
+            @if (createMachinePermission)
+            {
+                <div class="col-sm-6">
+                    <a href="javascript:;" data-toggle="modal" data-target="#MachineCreateModal" class="btn bg-blue float-sm-right">
+                        <i class="fa fa-plus-square"></i>
+                        @L("Create")
+                    </a>
+                </div>
+            }
         </div>
     </div>
 </section>
@@ -49,7 +58,10 @@
                                         <th>@L("MachineName")</th>
                                         <th>@L("Notes")</th>
                                         <th>@L("MachineState")</th>
-                                        <th style="width: 150px">@L("Actions")</th>
+                                        @if (editMachinePermission || deleteMachinePermission)
+                                        {
+                                            <th style="width: 150px">@L("Actions")</th>
+                                        }
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -62,12 +74,16 @@
         </div>
     </div>
 </section>
-
-@await Html.PartialAsync("~/Views/Machines/_CreateModal.cshtml")
-
-<div class="modal fade" id="MachineEditModal" tabindex="-1" role="dialog" aria-labelledby="MachineEditModalLabel" data-backdrop="static">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
+@if (createMachinePermission)
+{
+    @await Html.PartialAsync("~/Views/Machines/_CreateModal.cshtml")
+}
+@if (editMachinePermission)
+{
+    <div class="modal fade" id="MachineEditModal" tabindex="-1" role="dialog" aria-labelledby="MachineEditModalLabel" data-backdrop="static">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+            </div>
         </div>
     </div>
-</div>
+}

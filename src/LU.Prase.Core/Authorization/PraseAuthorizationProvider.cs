@@ -13,6 +13,9 @@ namespace LU.Prase.Authorization
             context.CreatePermission(PermissionNames.Pages_Roles, L("Roles"));
             context.CreatePermission(PermissionNames.Pages_Tenants, L("Tenants"), multiTenancySides: MultiTenancySides.Host);
             context.CreatePermission(PermissionNames.Pages_Machines, L("Machines"));
+            context.CreatePermission(PermissionNames.Pages_CreateMachines, L("CreateMachine"));
+            context.CreatePermission(PermissionNames.Pages_EditMachines, L("EditMachine"));
+            context.CreatePermission(PermissionNames.Pages_DeleteMachines, L("DeleteMachine"));
         }
 
         private static ILocalizableString L(string name)

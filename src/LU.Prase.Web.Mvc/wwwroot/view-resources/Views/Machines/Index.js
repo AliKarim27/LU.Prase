@@ -5,6 +5,9 @@
         _$form = _$modal.find('form'),
         _$table = $('#MachinesTable');
 
+
+    var hasPermissionEdit = abp.auth.isGranted('Pages.Machines.Edit');
+    var hasPermissionDelete = abp.auth.isGranted('Pages.Machines.Delete');
     var _$machinesTable = _$table.DataTable({
         paging: true,
         serverSide: true,
@@ -47,23 +50,24 @@
                 data: 'machineStates',
                 sortable: false
             },
-            {
-                targets: 4,
-                data: null,
-                sortable: false,
-                autoWidth: false,
-                defaultContent: '',
-                render: (data, type, row, meta) => {
-                    return [
-                        `   <button type="button" class="btn btn-sm bg-secondary edit-machine" data-machine-id="${row.id}" data-toggle="modal" data-target="#MachineEditModal">`,
-                        `       <i class="fas fa-pencil-alt"></i> ${l('Edit')}`,
-                        '   </button>',
-                        `   <button type="button" class="btn btn-sm bg-danger delete-machine" data-machine-id="${row.id}" data-machine-name="${row.name}">`,
-                        `       <i class="fas fa-trash"></i> ${l('Delete')}`,
-                        '   </button>',
-                    ].join('');
-                }
-            }
+            (hasPermissionEdit || hasPermissionDelete) ?
+                {
+                    targets: 4,
+                    data: null,
+                    sortable: false,
+                    autoWidth: false,
+                    defaultContent: '',
+                    render: (data, type, row, meta) => {
+                        return [hasPermissionEdit ?
+                            `   <button type="button" class="btn btn-sm bg-secondary edit-machine" data-machine-id="${row.id}" data-toggle="modal" data-target="#MachineEditModal">` : '',
+                        hasPermissionEdit ? `       <i class="fas fa-pencil-alt"></i> ${l('Edit')}` : '',
+                        hasPermissionEdit ? '   </button>' : '',
+                        hasPermissionDelete ? `   <button type="button" class="btn btn-sm bg-danger delete-machine" data-machine-id="${row.id}" data-machine-name="${row.name}">` : '',
+                        hasPermissionDelete ? `       <i class="fas fa-trash"></i> ${l('Delete')}` : '',
+                        hasPermissionDelete ? '   </button>' : '',
+                        ].join('');
+                    }
+                } : {}
         ]
     });
 
