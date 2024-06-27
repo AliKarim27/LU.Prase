@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace LU.Prase.Machines.Dto
 {
-    public class PortfolioMappingProfile : Profile
+    public class MachineMappingProfile : Profile
     {
 
-        public PortfolioMappingProfile()
+        public MachineMappingProfile()
         {
             CreateMap<Machine, MachineDto>().ReverseMap();
             CreateMap<Machine, CreateMachineDto>().ReverseMap();
