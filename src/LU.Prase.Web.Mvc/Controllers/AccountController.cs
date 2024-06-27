@@ -175,13 +175,20 @@ namespace LU.Prase.Web.Controllers
                     }
                 }
 
-                var user = await _userRegistrationManager.RegisterAsync(
+                var user = await _userRegistrationManager.RegisterStudentAsync(
                     model.Name,
                     model.Surname,
                     model.EmailAddress,
                     model.UserName,
                     model.Password,
-                    true // Assumed email address is always confirmed. Change this if you want to implement email confirmation.
+                    true ,
+                    model.Major,
+                    model.Supervisor,
+                    model.EducationalLevel,
+                    model.PhoneNumber,
+                    model.University,
+                    model.Faculty
+                    // Assumed email address is always confirmed. Change this if you want to implement email confirmation.
                 );
 
                 // Getting tenant-specific settings

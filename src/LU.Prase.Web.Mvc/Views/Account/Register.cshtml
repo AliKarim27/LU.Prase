@@ -1,4 +1,5 @@
 ﻿@using Abp.Authorization.Users
+@using LU.Prase.Entities.Enums
 @model LU.Prase.Web.Models.Account.RegisterViewModel
 @{
     ViewBag.Title = L("Register");
@@ -57,6 +58,55 @@
     </div>
     <div class="input-group mb-3">
         <input type="password" name="Password" class="form-control" placeholder="@L("Password")" required maxlength="@AbpUserBase.MaxPlainPasswordLength">
+        <div class="input-group-append">
+            <div class="input-group-text">
+                <span class="fas fa-lock"></span>
+            </div>
+        </div>
+    </div>
+    <div class="input-group mb-3">
+        <input type="text" name="Supervisor" class="form-control" placeholder="@L("Supervisor")" required>
+        <div class="input-group-append">
+            <div class="input-group-text">
+                <span class="fas fa-lock"></span>
+            </div>
+        </div>
+    </div>
+    <div class="input-group mb-3">
+        <input type="text" name="Major" class="form-control" placeholder="@L("Major")" required>
+        <div class="input-group-append">
+            <div class="input-group-text">
+                <span class="fas fa-lock"></span>
+            </div>
+        </div>
+    </div>
+    <div class="input-group mb-3">
+        <input type="text" name="PhoneNumber" class="form-control" placeholder="@L("PhoneNumber")" required>
+        <div class="input-group-append">
+            <div class="input-group-text">
+                <span class="fas fa-lock"></span>
+            </div>
+        </div>
+    </div>
+    <div class="input-group mb-3">
+        <select asp-items="@Html.GetEnumSelectList(typeof(EducationalLevel))" id="EducationalLevel" name="EducationalLevel" class="form-control selectpicker w-100" data-size="5" data-live-search="true" data-style="btn-default">
+        </select>
+        <div class="input-group-append">
+            <div class="input-group-text">
+                <span class="fas fa-lock"></span>
+            </div>
+        </div>
+    </div>
+    <div class="input-group mb-3">
+        <input type="text" name="University" class="form-control" placeholder="@L("University")" required>
+        <div class="input-group-append">
+            <div class="input-group-text">
+                <span class="fas fa-lock"></span>
+            </div>
+        </div>
+    </div>
+    <div class="input-group mb-3">
+        <input type="text" name="Faculty" class="form-control" placeholder="@L("Faculty")" required>
         <div class="input-group-append">
             <div class="input-group-text">
                 <span class="fas fa-lock"></span>

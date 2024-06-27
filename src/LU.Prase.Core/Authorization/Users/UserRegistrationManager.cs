@@ -11,6 +11,8 @@ using Abp.Runtime.Session;
 using Abp.UI;
 using LU.Prase.Authorization.Roles;
 using LU.Prase.MultiTenancy;
+using LU.Prase.Entities.Enums;
+using LU.Prase.Entities;
 
 namespace LU.Prase.Authorization.Users
 {
@@ -68,6 +70,37 @@ namespace LU.Prase.Authorization.Users
             await CurrentUnitOfWork.SaveChangesAsync();
 
             return user;
+        }
+        public async Task<User> RegisterStudentAsync(string name, string surname, string emailAddress, string userName, string plainPassword, bool isEmailConfirmed,string major,string supervisor,EducationalLevel educationalLevel,string phoneNumber,string university,string faculty)
+        {
+            CheckForTenant();
+            var tenant = await GetActiveTenantAsync();
+            var student = new Student
+            {
+                TenantId = tenant.Id,
+                Name = name,
+                Surname = surname,
+                EmailAddress = emailAddress,
+                IsActive = true,
+                UserName = userName,
+                IsEmailConfirmed = isEmailConfirmed,
+                Major = major,
+                Supervisor = supervisor,
+                EducationalLevel = educationalLevel,
+                PhoneNumber = phoneNumber,
+                University = university,
+                Faculty = faculty,
+                Roles = new List<UserRole>()
+            };
+            student.SetNormalizedNames();
+            foreach (var defaultRole in await _roleManager.Roles.Where(r => r.IsDefault).ToListAsync())
+            {
+                student.Roles.Add(new UserRole(tenant.Id, student.Id, defaultRole.Id));
+            }
+            await _userManager.InitializeOptionsAsync(tenant.Id);
+            CheckErrors(await _userManager.CreateAsync(student, plainPassword));
+            await CurrentUnitOfWork.SaveChangesAsync();
+            return student;
         }
 
         private void CheckForTenant()

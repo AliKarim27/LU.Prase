@@ -9,6 +9,8 @@ namespace LU.Prase.Authorization.Users
     {
         public const string DefaultPassword = "123qwe";
 
+
+
         public static string CreateRandomPassword()
         {
             return Guid.NewGuid().ToString("N").Truncate(16);

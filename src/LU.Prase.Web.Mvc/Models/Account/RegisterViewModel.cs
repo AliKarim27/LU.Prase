@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using Abp.Auditing;
 using Abp.Authorization.Users;
 using Abp.Extensions;
+using LU.Prase.Entities.Enums;
 using LU.Prase.Validation;
 
 namespace LU.Prase.Web.Models.Account
@@ -24,10 +25,18 @@ namespace LU.Prase.Web.Models.Account
         [EmailAddress]
         [StringLength(AbpUserBase.MaxEmailAddressLength)]
         public string EmailAddress { get; set; }
+        [Phone]
+        [StringLength(AbpUserBase.MaxPhoneNumberLength)]
+        public string PhoneNumber { get; set; }
 
         [StringLength(AbpUserBase.MaxPlainPasswordLength)]
         [DisableAuditing]
         public string Password { get; set; }
+        public string Supervisor { get; set; }
+        public string Major { get; set; }
+        public string University { get; set; }
+        public string Faculty { get; set; }
+        public EducationalLevel EducationalLevel { get; set; }
 
         public bool IsExternalLogin { get; set; }
 

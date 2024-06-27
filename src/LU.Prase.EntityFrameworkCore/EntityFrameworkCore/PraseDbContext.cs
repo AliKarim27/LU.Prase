@@ -11,6 +11,7 @@ namespace LU.Prase.EntityFrameworkCore
     {
         /* Define a DbSet for each entity of the application */
         public virtual DbSet<Machine> Machines { get; set; }
+        public virtual DbSet<Student> Students { get; set; }
         public PraseDbContext(DbContextOptions<PraseDbContext> options)
             : base(options)
         {

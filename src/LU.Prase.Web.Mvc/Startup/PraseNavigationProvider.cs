@@ -39,7 +39,7 @@ namespace LU.Prase.Web.Startup
                     )
                 ).AddItem(
                     new MenuItemDefinition(
-                        PageNames.Roles,
+                        PageNames.Machines,
                         L("Machines"),
                         url: "Machines",
                         icon: "fas fa-theater-masks",
