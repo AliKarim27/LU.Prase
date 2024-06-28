@@ -77,14 +77,6 @@
             return;
         }
         var machine = _$form.serializeFormToObject();
-        //role.grantedPermissions = [];
-        //var _$permissionCheckboxes = _$form[0].querySelectorAll("input[name='permission']:checked");
-        //if (_$permissionCheckboxes) {
-        //    for (var permissionIndex = 0; permissionIndex < _$permissionCheckboxes.length; permissionIndex++) {
-        //        var _$permissionCheckbox = $(_$permissionCheckboxes[permissionIndex]);
-        //        role.grantedPermissions.push(_$permissionCheckbox.val());
-        //    }
-        //}
         abp.ui.setBusy(_$modal);
         _machineService
             .create(machine)
