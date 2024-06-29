@@ -119,7 +119,29 @@
     <text name="UsersActivation">Users activation</text>
     <text name="Machines">Machines</text>
     <text name="Register as a Student">Register as a Student</text>
-    <text name="Title">Platform for Research and Analysis in Environmental Sciences</text>
+	<text name="MachineName">Machine name</text>
+	<text name="Notes">Notes</text>
+	  <text name="MachineState">Machine State</text>
+	  <text name="Supervisor">Supervisor</text>
+	  <text name="Major">Major</text>
+	  <text name="PhoneNumber">Phone Number</text>
+	  <text name="EducationalLevel">Educational Level</text>
+	  <text name="University">University</text>
+	  <text name="Faculty"> Faculty</text>
+
+	  <text name="CreateNewMachine"> create new machine </text>
+
+
+
+	  <text name="CreateMachine">Create machine</text>
+	  <text name="EditMachine">Edit machine</text>
+	  <text name="DeleteMachine">Delete machine</text>
+
+
+
+
+
+	  <text name="Title">Platform for Research and Analysis in Environmental Sciences</text>
 	  
 	  
   </texts>
