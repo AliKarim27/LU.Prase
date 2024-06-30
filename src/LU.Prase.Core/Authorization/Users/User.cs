@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Abp.Authorization.Users;
 using Abp.Extensions;
+using LU.Prase.Entities;
 
 namespace LU.Prase.Authorization.Users
 {
@@ -9,6 +10,8 @@ namespace LU.Prase.Authorization.Users
     {
         public const string DefaultPassword = "123qwe";
 
+        public List<Departement> Departements {  get; set; }    
+        public List<Section> Sections {  get; set; }    
 
 
         public static string CreateRandomPassword()

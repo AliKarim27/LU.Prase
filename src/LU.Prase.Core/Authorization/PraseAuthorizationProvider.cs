@@ -15,7 +15,15 @@ namespace LU.Prase.Authorization
             context.CreatePermission(PermissionNames.Pages_Machines, L("Machines"));
             context.CreatePermission(PermissionNames.Pages_CreateMachines, L("CreateMachine"));
             context.CreatePermission(PermissionNames.Pages_EditMachines, L("EditMachine"));
-            context.CreatePermission(PermissionNames.Pages_DeleteMachines, L("DeleteMachine"));
+            context.CreatePermission(PermissionNames.Pages_DeleteMachines, L("DeleteMachine")); 
+            context.CreatePermission(PermissionNames.Pages_Departements, L("Departements"));
+            context.CreatePermission(PermissionNames.Pages_CreateDepartements, L("CreateDepartement"));
+            context.CreatePermission(PermissionNames.Pages_EditDepartements, L("EditDepartement"));
+            context.CreatePermission(PermissionNames.Pages_DeleteDepartements, L("DeleteDepartement"));
+            context.CreatePermission(PermissionNames.Pages_Sections, L("Sections"));
+            context.CreatePermission(PermissionNames.Pages_CreateSections, L("CreateSection"));
+            context.CreatePermission(PermissionNames.Pages_EditSections, L("EditSection"));
+            context.CreatePermission(PermissionNames.Pages_DeleteSections, L("DeleteSection"));
         }
 
         private static ILocalizableString L(string name)

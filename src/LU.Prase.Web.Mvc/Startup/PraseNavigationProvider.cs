@@ -45,6 +45,21 @@ namespace LU.Prase.Web.Startup
                         icon: "fas fa-theater-masks",
                         permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Machines)
                     )
+                    ).AddItem(
+                    new MenuItemDefinition(
+                        PageNames.Departements,
+                        L("Departements"),
+                        url: "Departements",
+                        icon: "fas fa-theater-masks",
+                        permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Departements)
+                    )).AddItem(
+                    new MenuItemDefinition(
+                        PageNames.Sections,
+                        L("Sections"),
+                        url: "Sections",
+                        icon: "fas fa-theater-masks",
+                        permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Sections)
+                    )
                 );
         }
 

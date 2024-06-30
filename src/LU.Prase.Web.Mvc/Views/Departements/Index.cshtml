@@ -1,0 +1,90 @@
+﻿@using LU.Prase.Authorization
+@using LU.Prase.Web.Startup
+@{
+    ViewBag.Title = L("Departements");
+    ViewBag.CurrentPageName = PageNames.Departements;
+
+
+    var createDepartementPermission = await PermissionChecker.IsGrantedAsync(PermissionNames.Pages_CreateDepartements);
+    var editDepartementPermission = await PermissionChecker.IsGrantedAsync(PermissionNames.Pages_EditDepartements);
+    var deleteDepartementPermission = await PermissionChecker.IsGrantedAsync(PermissionNames.Pages_DeleteDepartements);
+}
+@section scripts
+{
+    <environment names="Development">
+        <script src="~/view-resources/Views/Departements/Index.js" asp-append-version="true"></script>
+    </environment>
+
+    <environment names="Staging,Production">
+        <script src="~/view-resources/Views/Departements/Index.min.js" asp-append-version="true"></script>
+    </environment>
+}
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1>@L("Departements")</h1>
+            </div>
+            @if (createDepartementPermission)
+            {
+                <div class="col-sm-6">
+                    <a href="javascript:;" data-toggle="modal" data-target="#DepartementCreateModal" class="btn bg-blue float-sm-right">
+                        <i class="fa fa-plus-square"></i>
+                        @L("Create")
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!--Use for bulk actions-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="DepartementsTable" class="table table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>@L("Name")</th>
+                                        <th>@L("Description")</th>
+                                        <th>@L("Address")</th>
+                                        <th>@L("Responsibles")</th>
+                                        @if (editDepartementPermission || deleteDepartementPermission)
+                                        {
+                                            <th style="width: 150px">@L("Actions")</th>
+                                        }
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@if (createDepartementPermission)
+{
+    @await Html.PartialAsync("~/Views/Departements/_CreateModal.cshtml")
+}
+@if (editDepartementPermission)
+{
+    <div class="modal fade" id="DepartementEditModal" tabindex="-1" role="dialog" aria-labelledby="DepartementEditModalLabel" data-backdrop="static">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
+}

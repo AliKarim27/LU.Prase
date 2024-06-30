@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LU.Prase.Department.Dto
+namespace LU.Prase.Sections.Dto
 {
     public class ResponsibleDto : EntityDto<long>
     {

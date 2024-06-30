@@ -21,7 +21,7 @@
             {
                 name: 'refresh',
                 text: '<i class="fas fa-redo-alt"></i>',
-                action: () => _$rolesTable.draw(false)
+                action: () => _$machinesTable.draw(false)
             }
         ],
         responsive: {

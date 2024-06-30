@@ -6,15 +6,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LU.Prase.Department.Dto
+namespace LU.Prase.Sections.Dto
 {
-    public class DepartementDto : EntityDto<long>
+    public class SectionDto : EntityDto<long>
     {
         public string Name { get; set; }
         public string Description { get; set; }
-        public string Address { get; set; }
+        public DepartementDto Departement { get; set; }
         public List<ResponsibleDto> Responsibles { get; set; }
         public List<ResponsibleDto> AllResponsibles { get; set; }
+        public List<DepartementDto> AllDepartements { get; set; }
 
     }
 }
