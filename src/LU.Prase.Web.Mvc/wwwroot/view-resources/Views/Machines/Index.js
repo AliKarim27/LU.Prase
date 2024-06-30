@@ -13,9 +13,7 @@
         serverSide: true,
         listAction: {
             ajaxFunction: _machineService.getAll,
-            //inputFilter: function () {
-            //    return $('#RolesSearchForm').serializeFormToObject(true);
-            //}
+           
         },
         buttons: [
             {
@@ -47,12 +45,17 @@
             },
             {
                 targets: 3,
+                data: 'section.name',
+                sortable: false
+            },
+            {
+                targets: 4,
                 data: 'machineStates',
                 sortable: false
             },
             (hasPermissionEdit || hasPermissionDelete) ?
                 {
-                    targets: 4,
+                    targets: 5,
                     data: null,
                     sortable: false,
                     autoWidth: false,
@@ -135,9 +138,27 @@
             }
         );
     }
+    function addItemToSelect(selectId, itemText, itemValue) {
+        // Get the select element by its ID and empty it
+        var $selectElement = $('#' + selectId);
 
+        // Create a new option element
+        var $newOption = $('<option></option>')
+            .text(itemText)
+            .val(itemValue);
+
+        // Add the new option to the select element
+        $selectElement.append($newOption);
+    }
     _$modal.on('shown.bs.modal', () => {
         _$modal.find('input:not([type=hidden]):first').focus();
+        $('#SectionId').empty();
+        _machineService.getSections().done((sections) => {
+            sections.forEach((section) => {
+                console.log(section);
+                addItemToSelect('SectionId', section.name, section.id);
+            });
+        })
     }).on('hidden.bs.modal', () => {
         _$form.clearForm();
     });

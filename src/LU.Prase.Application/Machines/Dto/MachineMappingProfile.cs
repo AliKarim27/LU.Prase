@@ -16,6 +16,8 @@ namespace LU.Prase.Machines.Dto
             CreateMap<Machine, MachineDto>().ReverseMap();
             CreateMap<Machine, CreateMachineDto>().ReverseMap();
             CreateMap<Machine, UpdateMachineDto>().ReverseMap();
+            CreateMap<Section, SectionDto>().ReverseMap();
+
         }
     }
 }

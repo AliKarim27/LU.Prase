@@ -1,5 +1,4 @@
 ﻿using Abp.Application.Services.Dto;
-using LU.Prase.Entities.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,11 +7,8 @@ using System.Threading.Tasks;
 
 namespace LU.Prase.Machines.Dto
 {
-    public class UpdateMachineDto : EntityDto<long>
+    public class SectionDto : EntityDto<long>
     {
         public string Name { get; set; }
-        public string Notes { get; set; }
-        public long SectionId { get; set; }
-        public MachineStates MachineStates { get; set; }
     }
 }

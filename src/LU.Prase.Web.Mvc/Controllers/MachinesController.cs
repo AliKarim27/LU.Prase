@@ -25,6 +25,7 @@ namespace LU.Prase.Web.Controllers
         public async Task<ActionResult> EditModal(int machineId)
         {
             var output = await _machineAppService.GetAsync(new EntityDto<long> { Id = machineId });
+            output.AllSections = await _machineAppService.GetSectionsAsync();
             return PartialView("_EditModal", output);
         }
     }

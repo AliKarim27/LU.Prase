@@ -13,6 +13,9 @@ namespace LU.Prase.Machines.Dto
         public string Name { get; set; }
         public string Notes { get; set; }
         public string MachineStates { get; set; }
+        public SectionDto Section { get; set; }
+
+        public List<SectionDto> AllSections { get; set; }
 
     }
 }

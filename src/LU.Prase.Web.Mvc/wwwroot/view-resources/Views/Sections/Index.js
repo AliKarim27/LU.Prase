@@ -170,12 +170,14 @@
     }
     _$modal.on('shown.bs.modal', () => {
         _$modal.find('input:not([type=hidden]):first').focus();
+        $('#DepartementId').empty();
         _sectionService.getDepartements().done((departements) => {
             departements.forEach((departement) => {
                 console.log(departement);
                 addItemToSelect('DepartementId', departement.name, departement.id);
             });
         })
+        $('#Responsibles').empty()
         _sectionService.getAllResponsibles().done((responsibles) => {
             responsibles.forEach((responsible) => {
                 console.log(responsible);

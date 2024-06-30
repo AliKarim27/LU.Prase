@@ -170,6 +170,7 @@
     }
     _$modal.on('shown.bs.modal', () => {
         _$modal.find('input:not([type=hidden]):first').focus();
+        $('#Responsibles').empty();
         _departementService.getAllResponsibles().done((responsibles) => {
             responsibles.forEach((responsible) => {
                 console.log(responsible);
