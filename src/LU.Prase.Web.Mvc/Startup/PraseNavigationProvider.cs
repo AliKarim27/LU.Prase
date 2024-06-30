@@ -42,7 +42,7 @@ namespace LU.Prase.Web.Startup
                         PageNames.Machines,
                         L("Machines"),
                         url: "Machines",
-                        icon: "fas fa-theater-masks",
+                        icon: "fas fa-cogs",
                         permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Machines)
                     )
                     ).AddItem(
@@ -50,14 +50,14 @@ namespace LU.Prase.Web.Startup
                         PageNames.Departements,
                         L("Departements"),
                         url: "Departements",
-                        icon: "fas fa-theater-masks",
+                        icon: "fas fa-user-tie",
                         permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Departements)
                     )).AddItem(
                     new MenuItemDefinition(
                         PageNames.Sections,
                         L("Sections"),
                         url: "Sections",
-                        icon: "fas fa-theater-masks",
+                        icon: "fas fa-vial",
                         permissionDependency: new SimplePermissionDependency(PermissionNames.Pages_Sections)
                     )
                 );
